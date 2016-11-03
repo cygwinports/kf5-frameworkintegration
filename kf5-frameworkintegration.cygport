@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-frameworkintegration"
-VERSION=5.12.0
+VERSION=5.27.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 theme integration framework"
@@ -10,17 +10,14 @@ integration of Qt applications when running on a KDE Plasma workspace."
 
 PKG_NAMES="${NAME} libKF5Style5 libKF5Style-devel"
 kf5_frameworkintegration_CATEGORY="KDE"
-kf5_frameworkintegration_REQUIRES="font-oxygen-ttf"
 kf5_frameworkintegration_CONTENTS="
 	usr/lib/qt5/plugins/kf5/FrameworkIntegrationPlugin.dll
-	usr/lib/qt5/plugins/platformthemes/KDEPlatformTheme.dll
 	usr/share/doc/
 	usr/share/kf5/infopage/
 	usr/share/knotifications5/
-	usr/share/locale/
 "
 libKF5Style5_CONTENTS="usr/bin/cygKF5Style-5.dll"
-libKF5Style_devel_REQUIRES=
+libKF5Style_devel_REQUIRES="libQt5Core-devel"
 libKF5Style_devel_CONTENTS="
 	usr/include/KF5/KStyle/
 	usr/include/KF5/frameworkintegration_version.h
