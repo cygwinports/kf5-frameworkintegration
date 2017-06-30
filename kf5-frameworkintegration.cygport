@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-frameworkintegration"
-VERSION=5.27.0
+VERSION=5.35.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 theme integration framework"
@@ -12,6 +12,7 @@ PKG_NAMES="${NAME} libKF5Style5 libKF5Style-devel"
 kf5_frameworkintegration_CATEGORY="KDE"
 kf5_frameworkintegration_CONTENTS="
 	usr/lib/qt5/plugins/kf5/FrameworkIntegrationPlugin.dll
+	usr/libexec/kf5/kpackagehandlers/knshandler.exe
 	usr/share/doc/
 	usr/share/kf5/infopage/
 	usr/share/knotifications5/
