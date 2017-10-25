@@ -2,7 +2,7 @@ inherit kf5
 
 NAME="kf5-frameworkintegration"
 VERSION=5.35.0
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="KDE 5 theme integration framework"
 DESCRIPTION="Framework Integration is a set of plugins responsible for better
